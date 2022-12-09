@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lets play Roll The Dice</h1>
+        <h2 id="player"></h2>
+        <div class="instructions">
+            <p>Rules:</p>
+            <ul>
+                <li>Click the button to roll the dice.</li>
+                <li>The number it lands on will be added to your total.</li>
+                <li>When your total reaches or exceeds 15, <strong>you win!</strong></li>
+                <li><strong>However... </strong>If at any point it lands on a 6, it's<strong> game over</strong> and your total will be reset to 0.</li>
+                <li></li>
+                <li><strong>Good Luck!</strong></li>
+
+            </ul>
+        </div>
+        <div class="dice">
+            <img id="one" src="images/1.png" alt="Dice shows 1">
+        </div>
+        <div class="game">
+        <button type="button" class="btn" id="btn"> Roll the Dice </button>
+        <div class="banner" id="banner">
+            <h1 id="bannerText"></h1>
+        </div>
+        <p id="total">Total Score: 0</p>
+        </div>
+        <div class = "playAgain">
+            <h1 id="message"></h1>
+            <div class="btns">
+                <btn id="yes"></btn>
+                <btn id="no"></btn>
+            </div>
+        </div>
+    </div>
+        <script src="./magicDice.js"></script>
+</body>
+</html>
